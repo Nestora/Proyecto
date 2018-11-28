@@ -1,0 +1,32 @@
+c:\users\nardevelop02\documents\visual studio 2010\Projects\7BMiniProyecto\7BMiniProyecto\bin\Debug\7BMiniProyecto.exe
+c:\users\nardevelop02\documents\visual studio 2010\Projects\7BMiniProyecto\7BMiniProyecto\bin\Debug\7BMiniProyecto.pdb
+c:\users\nardevelop02\documents\visual studio 2010\Projects\7BMiniProyecto\7BMiniProyecto\obj\x86\Debug\_7BMiniProyecto.AltaCliente.resources
+c:\users\nardevelop02\documents\visual studio 2010\Projects\7BMiniProyecto\7BMiniProyecto\obj\x86\Debug\_7BMiniProyecto.Form1.resources
+c:\users\nardevelop02\documents\visual studio 2010\Projects\7BMiniProyecto\7BMiniProyecto\obj\x86\Debug\_7BMiniProyecto.Properties.Resources.resources
+c:\users\nardevelop02\documents\visual studio 2010\Projects\7BMiniProyecto\7BMiniProyecto\obj\x86\Debug\7BMiniProyecto.csproj.GenerateResource.Cache
+c:\users\nardevelop02\documents\visual studio 2010\Projects\7BMiniProyecto\7BMiniProyecto\obj\x86\Debug\7BMiniProyecto.exe
+c:\users\nardevelop02\documents\visual studio 2010\Projects\7BMiniProyecto\7BMiniProyecto\obj\x86\Debug\7BMiniProyecto.pdb
+C:\Users\Nardevelop02\Documents\Visual Studio 2010\Projects\7BMiniProyecto\7BMiniProyecto\obj\x86\Debug\_7BMiniProyecto.ConsultaCliente.resources
+C:\Users\Nardevelop02\Documents\Visual Studio 2010\Projects\7BMiniProyecto\7BMiniProyecto\obj\x86\Debug\7BMiniProyecto.csprojResolveAssemblyReference.cache
+H:\7BMiniProyecto\7BMiniProyecto\obj\x86\Debug\7BMiniProyecto.exe
+H:\7BMiniProyecto\7BMiniProyecto\obj\x86\Debug\7BMiniProyecto.pdb
+C:\Users\MaryNest\Documents\7BMiniProyecto - copia\7BMiniProyecto\bin\Debug\7BMiniProyecto.exe
+C:\Users\MaryNest\Documents\7BMiniProyecto - copia\7BMiniProyecto\bin\Debug\7BMiniProyecto.pdb
+C:\Users\MaryNest\Documents\7BMiniProyecto - copia\7BMiniProyecto\obj\x86\Debug\7BMiniProyecto.csprojAssemblyReference.cache
+C:\Users\MaryNest\Documents\7BMiniProyecto - copia\7BMiniProyecto\obj\x86\Debug\_7BMiniProyecto.AltaCliente.resources
+C:\Users\MaryNest\Documents\7BMiniProyecto - copia\7BMiniProyecto\obj\x86\Debug\_7BMiniProyecto.Properties.Resources.resources
+C:\Users\MaryNest\Documents\7BMiniProyecto - copia\7BMiniProyecto\obj\x86\Debug\7BMiniProyecto.csproj.GenerateResource.cache
+C:\Users\MaryNest\Documents\7BMiniProyecto - copia\7BMiniProyecto\obj\x86\Debug\7BMiniProyecto.csproj.CoreCompileInputs.cache
+C:\Users\MaryNest\Documents\7BMiniProyecto - copia\7BMiniProyecto\obj\x86\Debug\7BMiniProyecto.exe
+C:\Users\MaryNest\Documents\7BMiniProyecto - copia\7BMiniProyecto\obj\x86\Debug\7BMiniProyecto.pdb
+C:\Users\MaryNest\Documents\7BMiniProyecto - copia\7BMiniProyecto\obj\x86\Debug\_7BMiniProyecto.Consulta_Producto.resources
+C:\Users\MaryNest\Documents\7BMiniProyecto - copia\7BMiniProyecto\obj\x86\Debug\_7BMiniProyecto.Consulta.resources
+C:\Users\MaryNest\Documents\7BMiniProyecto - copia\7BMiniProyecto\obj\x86\Debug\_7BMiniProyecto.Cotizacion.resources
+C:\Users\MaryNest\Documents\7BMiniProyecto - copia\7BMiniProyecto\obj\x86\Debug\_7BMiniProyecto.Menu_Producto.resources
+C:\Users\MaryNest\Documents\7BMiniProyecto - copia\7BMiniProyecto\obj\x86\Debug\_7BMiniProyecto.Menu.resources
+C:\Users\MaryNest\Documents\7BMiniProyecto - copia\7BMiniProyecto\obj\x86\Debug\_7BMiniProyecto.MenuCte.resources
+C:\Users\MaryNest\Documents\7BMiniProyecto - copia\7BMiniProyecto\obj\x86\Debug\_7BMiniProyecto.Venta.resources
+C:\Users\MaryNest\Documents\7BMiniProyecto - copia\7BMiniProyecto\bin\Debug\7BMiniProyecto.exe.config
+C:\Users\MaryNest\Documents\7BMiniProyecto - copia\7BMiniProyecto\obj\x86\Debug\_7BMiniProyecto.MenuCliente.resources
+C:\Users\MaryNest\Documents\7BMiniProyecto - copia\7BMiniProyecto\obj\x86\Debug\_7BMiniProyecto.AltaProducto.resources
+C:\Users\MaryNest\Documents\7BMiniProyecto - copia\7BMiniProyecto\obj\x86\Debug\_7BMiniProyecto.ConsultaProducto.resources
