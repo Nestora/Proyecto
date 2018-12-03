@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.cbCliente = new System.Windows.Forms.ComboBox();
-            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtTota = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnConsultar = new System.Windows.Forms.Button();
-            this.txtRfc = new System.Windows.Forms.TextBox();
+            this.txtSubtotal = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,13 +45,13 @@
             this.cbProducto = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PrecioUnitario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.proyectoDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.proyectoDataSet = new _7BMiniProyecto.proyectoDataSet();
             this.label8 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chckIva = new System.Windows.Forms.CheckBox();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.button4 = new System.Windows.Forms.Button();
             this.txtFolio = new System.Windows.Forms.TextBox();
@@ -68,9 +68,10 @@
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.numericUpDowncantidad = new System.Windows.Forms.DomainUpDown();
             this.textDescripcion = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.numericUpDowncantidad = new System.Windows.Forms.DomainUpDown();
+            this.btnAgregar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.proyectoDataSet)).BeginInit();
@@ -87,13 +88,13 @@
             this.cbCliente.TabIndex = 41;
             this.cbCliente.SelectedIndexChanged += new System.EventHandler(this.cbCliente_SelectedIndexChanged);
             // 
-            // txtId
+            // txtTota
             // 
-            this.txtId.Location = new System.Drawing.Point(191, 504);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(100, 20);
-            this.txtId.TabIndex = 40;
-            this.txtId.Visible = false;
+            this.txtTota.Location = new System.Drawing.Point(191, 504);
+            this.txtTota.Name = "txtTota";
+            this.txtTota.Size = new System.Drawing.Size(100, 20);
+            this.txtTota.TabIndex = 40;
+            this.txtTota.Visible = false;
             // 
             // label7
             // 
@@ -112,14 +113,15 @@
             this.btnConsultar.TabIndex = 38;
             this.btnConsultar.Text = "Cotizar";
             this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
-            // txtRfc
+            // txtSubtotal
             // 
-            this.txtRfc.Enabled = false;
-            this.txtRfc.Location = new System.Drawing.Point(191, 453);
-            this.txtRfc.Name = "txtRfc";
-            this.txtRfc.Size = new System.Drawing.Size(100, 20);
-            this.txtRfc.TabIndex = 37;
+            this.txtSubtotal.Enabled = false;
+            this.txtSubtotal.Location = new System.Drawing.Point(191, 453);
+            this.txtSubtotal.Name = "txtSubtotal";
+            this.txtSubtotal.Size = new System.Drawing.Size(100, 20);
+            this.txtSubtotal.TabIndex = 37;
             // 
             // label6
             // 
@@ -208,12 +210,13 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Producto,
-            this.PrecioUnitario,
+            this.Precio,
             this.Cantidad,
             this.Importe});
             this.dataGridView1.DataSource = this.proyectoDataSetBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 283);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(678, 159);
             this.dataGridView1.TabIndex = 43;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -222,21 +225,25 @@
             // 
             this.Producto.HeaderText = "Producto";
             this.Producto.Name = "Producto";
+            this.Producto.ReadOnly = true;
             // 
-            // PrecioUnitario
+            // Precio
             // 
-            this.PrecioUnitario.HeaderText = "PrecioUnitario";
-            this.PrecioUnitario.Name = "PrecioUnitario";
+            this.Precio.HeaderText = "PrecioUnitario";
+            this.Precio.Name = "Precio";
+            this.Precio.ReadOnly = true;
             // 
             // Cantidad
             // 
             this.Cantidad.HeaderText = "Cantidad";
             this.Cantidad.Name = "Cantidad";
+            this.Cantidad.ReadOnly = true;
             // 
             // Importe
             // 
             this.Importe.HeaderText = "Importe";
             this.Importe.Name = "Importe";
+            this.Importe.ReadOnly = true;
             // 
             // proyectoDataSetBindingSource
             // 
@@ -257,15 +264,16 @@
             this.label8.TabIndex = 44;
             this.label8.Text = "Total";
             // 
-            // checkBox1
+            // chckIva
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(142, 487);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(43, 17);
-            this.checkBox1.TabIndex = 46;
-            this.checkBox1.Text = "IVA";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chckIva.AutoSize = true;
+            this.chckIva.Location = new System.Drawing.Point(142, 487);
+            this.chckIva.Name = "chckIva";
+            this.chckIva.Size = new System.Drawing.Size(43, 17);
+            this.chckIva.TabIndex = 46;
+            this.chckIva.Text = "IVA";
+            this.chckIva.UseVisualStyleBackColor = true;
+            this.chckIva.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // vScrollBar1
             // 
@@ -421,6 +429,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos de";
             // 
+            // numericUpDowncantidad
+            // 
+            this.numericUpDowncantidad.Location = new System.Drawing.Point(447, 60);
+            this.numericUpDowncantidad.Name = "numericUpDowncantidad";
+            this.numericUpDowncantidad.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDowncantidad.TabIndex = 98;
+            this.numericUpDowncantidad.SelectedItemChanged += new System.EventHandler(this.numericUpDowncantidad_SelectedItemChanged);
+            // 
             // textDescripcion
             // 
             this.textDescripcion.Enabled = false;
@@ -438,30 +454,34 @@
             this.label15.TabIndex = 98;
             this.label15.Text = "Descripcion";
             // 
-            // numericUpDowncantidad
+            // btnAgregar
             // 
-            this.numericUpDowncantidad.Location = new System.Drawing.Point(447, 60);
-            this.numericUpDowncantidad.Name = "numericUpDowncantidad";
-            this.numericUpDowncantidad.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDowncantidad.TabIndex = 98;
+            this.btnAgregar.Location = new System.Drawing.Point(647, 239);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.TabIndex = 98;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // Cotizacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(808, 523);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtFolio);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.vScrollBar1);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.chckIva);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.txtId);
+            this.Controls.Add(this.txtTota);
             this.Controls.Add(this.btnConsultar);
-            this.Controls.Add(this.txtRfc);
+            this.Controls.Add(this.txtSubtotal);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Name = "Cotizacion";
@@ -482,10 +502,10 @@
         #endregion
 
         private System.Windows.Forms.ComboBox cbCliente;
-        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtTota;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnConsultar;
-        private System.Windows.Forms.TextBox txtRfc;
+        private System.Windows.Forms.TextBox txtSubtotal;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -497,11 +517,11 @@
         private System.Windows.Forms.ComboBox cbProducto;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chckIva;
         private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Producto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PrecioUnitario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Importe;
         private System.Windows.Forms.BindingSource proyectoDataSetBindingSource;
@@ -523,5 +543,6 @@
         private System.Windows.Forms.TextBox textDescripcion;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DomainUpDown numericUpDowncantidad;
+        private System.Windows.Forms.Button btnAgregar;
     }
 }

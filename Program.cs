@@ -15,7 +15,7 @@ namespace _7BMiniProyecto
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Menu_Producto());
+            Application.Run(new Menu());
         }
     }
 }
